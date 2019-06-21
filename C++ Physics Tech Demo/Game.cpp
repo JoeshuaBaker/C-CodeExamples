@@ -1,7 +1,3 @@
-//Joeshua Baker
-//Homework 5
-//Completed 3/13/2016
-
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
