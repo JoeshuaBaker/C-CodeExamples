@@ -40,15 +40,7 @@ Chromosome Chromosome::mutate() const
 }
 
 Chromosome Chromosome::crossover(const Chromosome& c) const
-{
-    // implement crossover here
-
-    // your crossover function should randomly choose
-    // an index in the range of the chromosomes
-    // then take the first part (up to the index) from *this
-    // and the last part (from index to end) from c and
-    // concatenate those together then return the result
-	
+{	
 	int target = rand() % data.length();
 	std::string first = data.substr(0, target);
 	std::string second = c.getData().substr(target, data.length());
