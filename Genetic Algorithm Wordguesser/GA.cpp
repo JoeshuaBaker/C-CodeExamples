@@ -18,24 +18,6 @@ bool chromosomeCompare(Chromosome t1, Chromosome t2)
 
 Chromosome runGA(std::string tar, int popSize, double mr, double cr)
 {
-    // implement genetic algorithm here
-
-    // use a vector<Chromosome> for the population
-    // I recommend using STL algorithms such as std::sort
-
-    // remember, the GA is a loop until you find a chromosome
-    // of fitness 0
-
-    // on each iteration, you should be generating a new population
-    // of twice the size of popSize, filling it with chromosomes
-    // that have been mutated, crossed, and/or copied based on
-    // the probabilities given by mr and cr
-    // then sort it and keep only the best half as the population
-    // for the next iteration
-    // when you find a chromosome of fitness 0, you have finished and
-    // you should return it
-	
-	// Uncomment this stuff and line 90 if you want it to write to a text file.
 	std::ofstream tofile;
 	std::string filename(tar);
 	filename += ".txt";
